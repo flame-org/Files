@@ -8,13 +8,17 @@
 
 namespace Flame\Files;
 
+use Nette\Http\FileUpload;
+
 interface IFileUploadSaver
 {
 
 	/**
 	 * Save uploaded file and return file path
 	 *
-	 * @return string
+	 * @param FileUpload $file
+	 * @param null $name
+	 * @return mixed
 	 */
-	public function save();
+	public function save(FileUpload $file, $name = null);
 }
