@@ -23,9 +23,9 @@ class Storage extends Object
 	private $filePathHelpers;
 
 	/**
-	 * @param FilePathHelper $filePathHelpers
+	 * @param FilePathHelpers $filePathHelpers
 	 * @param $baseFolderPath
-	 * @param string $folderPath
+	 * @param $folderPath
 	 */
 	function __construct(FilePathHelpers $filePathHelpers, $baseFolderPath, $folderPath)
 	{

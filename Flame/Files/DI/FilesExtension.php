@@ -14,7 +14,7 @@ class FilesExtension extends CompilerExtension
 {
 
 	/** @var array  */
-	public $defauls = array(
+	public $defaults = array(
 		'paths' => array(
 			'base' => '',
 			'folder' => '/media/images'
@@ -27,7 +27,7 @@ class FilesExtension extends CompilerExtension
 	public function loadConfiguration()
 	{
 		$builder = $this->getContainerBuilder();
-		$config = $this->getConfig($this->defauls);
+		$config = $this->getConfig($this->defaults);
 
 		Validators::assert($config, 'array');
 		Validators::assertField($config, 'paths', 'array');
