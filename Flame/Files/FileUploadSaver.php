@@ -12,7 +12,7 @@ use Nette\Http\FileUpload;
 use Nette\InvalidArgumentException;
 use Nette\Object;
 use Nette\Utils\Strings;
-use Nette\Utils\FileSystem;
+use Flame\Files\Utils\FileSystem;
 use Flame\Files\Config\Storage;
 use Flame\Files\Config\IStorageProvider;
 
@@ -57,7 +57,7 @@ class FileUploadSaver extends Object implements IFileUploadSaver, IStorageProvid
 			throw new InvalidArgumentException('File ' . $file->getName() . ' is not valid.');
 		}
 
-		FileSystem::createDir($this->storage->getFullPath(), 0777);
+		$this->createDirectory($this->storage->getFullPath());
 
 		if(!$name) {
 			$name = $file->getSanitizedName();
@@ -73,6 +73,15 @@ class FileUploadSaver extends Object implements IFileUploadSaver, IStorageProvid
 		$file->move($filePath);
 
 		return $this->getFilePath($name);
+	}
+
+	/**
+	 * @param $path
+	 * @return bool
+	 */
+	private function createDirectory($path)
+	{
+		return FileSystem::mkDir((string) $path, true, 0777);
 	}
 
 	/**
