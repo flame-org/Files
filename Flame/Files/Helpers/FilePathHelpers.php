@@ -18,7 +18,7 @@ class FilePathHelpers extends Object
 	 * @param $path2
 	 * @return bool
 	 */
-	public function useSepator($path1, $path2)
+	public function useSeparator($path1, $path2)
 	{
 		if (Separator::isOnPathEnding($path1) || Separator::isOnPathBegging($path2)) {
 			return false;
@@ -39,7 +39,7 @@ class FilePathHelpers extends Object
 			unset($agrs[0]);
 			foreach ($agrs as $arg) {
 				$arg = (string) $arg;
-				if ($this->useSepator($path, $arg)) {
+				if ($this->useSeparator($path, $arg)) {
 					$path .= Separator::getSeparator() . $arg;
 				} else {
 					$path .= $agr;
