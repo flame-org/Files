@@ -46,6 +46,9 @@ class FilesExtension extends CompilerExtension
 
 		$builder->addDefinition($this->prefix('fileUploadSaver'))
 			->setClass('Flame\Files\FileUploadSaver');
+
+		$builder->addDefinition($this->prefix('fileDownloader'))
+			->setClass('Flame\Files\FileDownloader');
 	}
 
 }
