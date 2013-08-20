@@ -5,7 +5,7 @@
  * @author: Jiří Šifalda <sifalda.jiri@gmail.com>
  * @date: 19.08.13
  */
-namespace Flame\Files;
+namespace Flame\Files\Utils;
 
 use Nette\Object;
 use Nette\Utils\Strings;

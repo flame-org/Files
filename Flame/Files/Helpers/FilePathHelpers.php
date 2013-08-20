@@ -8,7 +8,7 @@
 namespace Flame\Files\Helpers;
 
 use Nette\Object;
-use Flame\Files\Separator;
+use Flame\Files\Utils\Separator;
 
 class FilePathHelpers extends Object
 {
