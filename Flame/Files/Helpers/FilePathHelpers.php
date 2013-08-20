@@ -42,7 +42,7 @@ class FilePathHelpers extends Object
 				if ($this->useSeparator($path, $arg)) {
 					$path .= Separator::getSeparator() . $arg;
 				} else {
-					$path .= $agr;
+					$path .= $arg;
 				}
 			}
 		}
