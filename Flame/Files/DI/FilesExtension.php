@@ -16,7 +16,7 @@ class FilesExtension extends CompilerExtension
 	/** @var array  */
 	public $defauls = array(
 		'paths' => array(
-			'base' => null,
+			'base' => '',
 			'folder' => '/media/images'
 		)
 	);
