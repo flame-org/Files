@@ -36,7 +36,7 @@ class FileUploadSaver extends Object implements IFileUploadSaver, IStorageProvid
 	}
 
 	/**
-	 * @return \Flame\Files\Storage
+	 * @return Storage
 	 */
 	public function getStorage()
 	{
