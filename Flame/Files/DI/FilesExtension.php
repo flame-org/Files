@@ -16,7 +16,7 @@ class FilesExtension extends NamedExtension
 	/** @var array  */
 	public $defaults = array(
 		'paths' => array(
-			'base' => '',
+			'base' => '%wwwDir%',
 			'folder' => '/media/images'
 		)
 	);
