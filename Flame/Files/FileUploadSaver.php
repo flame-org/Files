@@ -14,9 +14,8 @@ use Nette\Object;
 use Nette\Utils\Strings;
 use Flame\Files\Utils\FileSystem;
 use Flame\Files\Config\Storage;
-use Flame\Files\Config\IStorageProvider;
 
-class FileUploadSaver extends Object implements IFileUploadSaver, IStorageProvider
+class FileUploadSaver extends Object implements IFileUploadSaver
 {
 
 	/** @var  Storage */

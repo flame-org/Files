@@ -7,14 +7,13 @@
  */
 namespace Flame\Files;
 
-use Flame\Files\Config\IStorageProvider;
 use Flame\Files\Config\Storage;
 use Flame\Files\Helpers\FileHelpers;
 use Flame\Files\Helpers\FilePathHelpers;
 use Flame\Files\Utils\FileSystem;
 use Nette\Object;
 
-class FileDownloader extends Object implements IFileDownloader, IStorageProvider
+class FileDownloader extends Object implements IFileDownloader
 {
 
 	/** @var  Storage */

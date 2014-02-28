@@ -8,9 +8,10 @@
 
 namespace Flame\Files;
 
+use Flame\Files\Config\IStorageProvider;
 use Nette\Http\FileUpload;
 
-interface IFileUploadSaver
+interface IFileUploadSaver extends IStorageProvider
 {
 
 	/**

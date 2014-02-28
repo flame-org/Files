@@ -8,8 +8,9 @@
 
 namespace Flame\Files;
 
+use Flame\Files\Config\IStorageProvider;
 
-interface IFileDownloader
+interface IFileDownloader extends IStorageProvider
 {
 
 	/**
