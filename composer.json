@@ -1,6 +1,5 @@
 {
   "name": "flame/files",
-  "type": "nette-module",
   "description": "Basic classes with working with file system",
   "keywords": ["files", "nette", "filesystem", "flame", "tools"],
   "homepage": "https://github.com/flame-org/Files",
@@ -19,9 +18,7 @@
 
   "require": {
     "php": ">=5.3.2",
-    "nette/nette": ">=2.0.0",
-    "flame/modules": ">=0.5.0",
-    "flame/module-installer": ">=0.1.0"
+    "nette/nette": ">=2.1.0"
   },
 
   "config": {
@@ -32,13 +29,6 @@
     "psr-0": {
       "Flame": ""
     },
-    "classmap": ["Flame/Files/exceptions.php"],
-    "files": ["Flame/Files/compatibility.php"]
-  },
-
-  "extra": {
-    "module": {
-      "class": "Flame\\Files\\DI\\FilesExtension"
-    }
+    "classmap": ["Flame/Files/exceptions.php"]
   }
 }

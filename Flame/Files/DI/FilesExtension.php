@@ -7,10 +7,10 @@
  */
 namespace Flame\Files\DI;
 
-use Flame\Modules\Extension\NamedExtension;
+use Nette\DI\CompilerExtension;
 use Nette\Utils\Validators;
 
-class FilesExtension extends NamedExtension
+class FilesExtension extends CompilerExtension
 {
 
 	/** @var array  */
