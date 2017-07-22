@@ -11,6 +11,7 @@ use Flame\Files\Helpers\FilePathHelpers;
 use Nette\Http\FileUpload;
 use Nette\InvalidArgumentException;
 use Nette\Object;
+use Nette;
 use Nette\Utils\Strings;
 use Flame\Files\Utils\FileSystem;
 use Flame\Files\Config\Storage;
@@ -89,7 +90,7 @@ class FileUploadSaver extends Object implements IFileUploadSaver
 	 */
 	private function getPrefixedName($name)
 	{
-		return Strings::random(3) . '_' . $name;
+		return Nette\Utils\Random::generate(3) . '_' . $name;
 	}
 
 	/**
@@ -110,4 +111,4 @@ class FileUploadSaver extends Object implements IFileUploadSaver
 		return $this->filePathHelpers->joinPaths($this->storage->getFolderPath(), $name);
 	}
 
-} 
+}
